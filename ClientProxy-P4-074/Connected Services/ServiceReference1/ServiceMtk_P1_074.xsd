@@ -7,6 +7,13 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
+  <xs:complexType name="MathFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Kode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pesan" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MathFault" nillable="true" type="tns:MathFault" />
   <xs:complexType name="Koordinat">
     <xs:sequence>
       <xs:element minOccurs="0" name="X" type="xs:int" />
